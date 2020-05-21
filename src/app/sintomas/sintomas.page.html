@@ -1,0 +1,137 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+       }
+  h4 {
+    font-size: 0.8rem;
+      }
+</style>
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Sintomas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-item>
+        <ion-label text-wrap><h4>Está com febre? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="FS">Sim</ion-select-option>
+          <ion-select-option value="FN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com tosse seca? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="TSS">Sim</ion-select-option>
+          <ion-select-option value="TSN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dor/irritação de garganta? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DIGS">Sim</ion-select-option>
+          <ion-select-option value="DIGN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dificuldade para respirar? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DRS">Sim</ion-select-option>
+          <ion-select-option value="DRN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Ausência de paladar? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="APS">Sim</ion-select-option>
+          <ion-select-option value="APN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Ausência de olfato? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="AOS">Sim</ion-select-option>
+          <ion-select-option value="AON">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com secreção nasal ou espirros? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="SNES">Sim</ion-select-option>
+          <ion-select-option value="SNEN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dores no corpo? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DCS">Sim</ion-select-option>
+          <ion-select-option value="DCN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com diarreia?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DS">Sim</ion-select-option>
+          <ion-select-option value="DN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4> Viajou nos últimos 14 dias, para algum local com casos confirmados de COVID-19?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="V14S" >Sim</ion-select-option>
+          <ion-select-option value="V14N">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4> Esteve em cotato, nos últimos 14 dias, com um caso diagnosticado com COVID-19?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="C14S" >Sim</ion-select-option>
+          <ion-select-option value="C14N">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4>Possui alguma doença crônica?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DCRS" >Sim</ion-select-option>
+          <ion-select-option value="DCRN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    <!--  <section #classe [(ngModel)]="conta" (change)="execute(conta)">
+        <ion-button size="small" color="medium" [(ngModel)]="resultado">Resultado</ion-button>
+        </section> -->
+      
+
+    </ion-list>
+  </ion-content>
+</ion-app>
